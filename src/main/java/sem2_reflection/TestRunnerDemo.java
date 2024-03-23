@@ -94,3 +94,32 @@ public class TestRunnerDemo {
   }
 
 }
+
+/*
+before all tests
+  before each #2 test
+  before each #1 test
+    test X
+  after each #2 test
+  after each #1 test
+
+  before each #2 test
+  before each #1 test
+    test 3
+  after each #2 test
+  after each #1 test
+
+  before each #2 test
+  before each #1 test
+    test 2
+  after each #2 test
+  after each #1 test
+
+  before each #2 test
+  before each #1 test
+    test A
+  after each #2 test
+  after each #1 test
+
+after all tests
+ */
