@@ -1,4 +1,4 @@
-package ru.gb.lesson2.tests;
+package lesson2.tests;
 
 public class TestRunnerDemo {
 

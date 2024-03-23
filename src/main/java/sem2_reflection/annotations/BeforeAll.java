@@ -1,4 +1,4 @@
-package lesson2.tests;
+package sem2_reflection.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,5 +7,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface Test {
+public @interface BeforeAll {
+
 }

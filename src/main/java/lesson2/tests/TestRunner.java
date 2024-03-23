@@ -1,4 +1,4 @@
-package ru.gb.lesson2.tests;
+package lesson2.tests;
 
 import java.lang.reflect.AccessFlag;
 import java.lang.reflect.Constructor;

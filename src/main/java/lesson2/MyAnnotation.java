@@ -1,7 +1,5 @@
 package lesson2;
 
-import lesson1.Streams;
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
