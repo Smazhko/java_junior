@@ -51,8 +51,8 @@ public class Reflections {
     // РЕЗУЛЬТАТ: 1
 
     // создаём объект класса FILED, который будет содержать ссылку на какое-то конкретное поле объекта класса User
-    // .getDeclared(Constructor, Field, Method) - обозначает доступ ко ВСЕМ полям, прописанным в этом классе - private, public
-    // .get(Constructor, Field, Method) - обозначает доступ ко всем полям / методам / констукторам,
+    // .getDeclared..Constructor/Field/Method - обозначает доступ ко ВСЕМ полям, прописанным в этом классе - private, public
+    // .get..Constructor/Field/Method - обозначает доступ ко всем полям / методам / констукторам,
     // которые ДОСТУПНЫ - public и наследованные от родителей
     // получить значение поля -> .get(объект класса, поле которого надо получить)
     Field password = userClass.getDeclaredField("password");
@@ -62,7 +62,7 @@ public class Reflections {
 
     // получаем доступ к ПРИВАТНОМУ полю login. ОБЯЗАТЕЛЬНО надо установить ДОСТУП .setAccessible(true)
     Field login = userClass.getDeclaredField("login");
-    System.out.println("login.get(inchestnov): "+login.get(inchestnov));
+    System.out.println("login.get(inchestnov): " + login.get(inchestnov));
     login.setAccessible(true);
     login.set(inchestnov, "newValue");
 
