@@ -7,8 +7,6 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
-import java.sql.Connection;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -23,6 +21,8 @@ import java.util.Random;
    */
 
   /*
+  СМ. КОММЕНТАРИИ К КОДУ В LESSON4 ВО ВСЕХ!!!! КЛАССАХ
+
           <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
