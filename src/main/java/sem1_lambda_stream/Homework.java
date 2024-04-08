@@ -101,7 +101,7 @@ public class Homework {
     public static Map<Department, Person> printDepartmentOldestPerson(List<Person> persons) {
         Comparator<Person> ageComparator = Comparator.comparing(Person::getAge);
 
-        // сначала создаём МАР, который собираем так: key - отдел, value - значение, которое останется после сравнения всех сотрудников по возрастам
+        // сначала создаём МАР, которую собираем так: key - отдел, value - значение, которое останется после сравнения всех сотрудников по возрастам
         Map<Department, Person> oldestPersonByDeprt = persons.stream()
                 .collect(Collectors.toMap(
                         Person::getDepartment,          // получаем ключ
@@ -114,11 +114,11 @@ public class Homework {
                         )
                 );
 
-        // то есть в конструкции Function.identity(), (first, second) -> {  ...
+        // то есть в конструкции Function.identity(), (first, second) -> {  ...  }
         // Function.identity() будет выступать в качестве "накопителя" результата,
-        // а ЛЯМБДА (first, second) -> { ... будет записывать в Function.identity() результат сравнения
+        // а ЛЯМБДА (first, second) -> { ... } будет записывать в Function.identity() результат сравнения
 
-        // далее плученную МАР мы просто сортируем по VALUE в ОБРАТНОМ ПОРЯДКЕ (.reversed())
+        // далее полученную МАР мы просто сортируем по VALUE в ОБРАТНОМ ПОРЯДКЕ (.reversed())
         System.out.println("\n>>>>>>>>> ОТДЕЛЫ С САМЫМ СТАРШИМ сотрудником (сортировка по убыванию от самого старшего)");
         oldestPersonByDeprt.entrySet()
                 .stream().sorted(
